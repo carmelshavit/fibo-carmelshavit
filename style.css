@@ -6,3 +6,28 @@ body {
     padding-left: 164px;
     padding-right: 164px;
 }
+
+.num-output {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.output-error42 {
+    color: #D9534F;
+    font-size: 16px;
+    font-weight: 400;
+    size: 16px;
+}
+
+/* .num-input {
+    width: 277px;
+    height: 24px;
+    font-family: Open Sans;
+    font-size: 160px;
+    font-weight: 400;
+    line-height: 24px;
+
+} */
