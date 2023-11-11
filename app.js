@@ -20,7 +20,6 @@ function wait(time) {
     setTimeout(resolve, time);
   });
 }
-
 app.get("/fibonacci/:number", async (req, res) => {
   await wait(600);
   console.log("obj")
@@ -36,6 +35,8 @@ app.get("/fibonacci/:number", async (req, res) => {
     return res.status(400).send("can't be smaller than 1");
   }
   const result = fibonacci(number);
+
+
   const obj = { number, result, createdDate: Date.now() };
   console.log(obj)
   db.insert(obj, (err) => {
