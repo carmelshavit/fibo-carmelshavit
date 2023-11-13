@@ -5,6 +5,7 @@ const checkbox = document.getElementById('checkbox');
 const loader = document.getElementById("spinner");
 const listResults = document.getElementById("listResults");
 const sortBy = document.getElementById("sortBy");
+loader.style.display = "none";
 
 function fiboCalcR(num) {
     if (num === 0 || num === 1) {
@@ -65,8 +66,11 @@ submitBtn.addEventListener('click', async (event) => {
     event.preventDefault();
     const userInput = parseInt(userInputField.value);
 
+
     if (checkbox.checked) {
         loader.style.display = "block";
+        document.querySelector(".num-output").innerHTML = ""
+
         try {
             try {
                 const result = await fiboCalcAsync(userInput);

@@ -14,7 +14,7 @@
 <body>
     <form>
         <h1 class="mb-5">Fibonacci Calculator</h1>
-        <div class="d-flex gap-0 column-gap-2">
+        <div class="d-flex gap-0 column-gap-2 align-items-center mb-4">
 
             <div>the fibonacci of</div>
             <input class="num-input" id="user-input" value="0" type="number">
@@ -24,9 +24,11 @@
             </div>
             <h1 class="num-output" id="user-output"></h1>
             <h1 class="num-error" id="num-error"></h1>
-            <input type="checkbox" id="checkbox" name="checkbox" value="0">
-            <label for="checkbox"> Save Calculation</label><br>
-            <select id="sortBy" name="results">
+            <div class="checkbox-container">
+                <input type="checkbox" id="checkbox" name="checkbox" value="0">
+                <label for="checkbox"> Save Calculation</label><br>
+            </div>
+            <select class="btn btn-secondary btn-sm" id="sortBy" name="results">
                 <option value="" disabled selected hidden>Sort By</option>
                 <option value="NumberAsc">Number Asc</option>
                 <option value="NumberDesc">Number Desc</option>
